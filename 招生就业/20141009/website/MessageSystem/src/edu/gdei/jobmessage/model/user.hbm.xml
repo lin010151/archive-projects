@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.gdei.jobmessage.model">
+	<class name="User" table="apn_user">
+		<id name="id" column="id" />
+		<property name="username" column="username"></property>
+		<property name="password" column="password"></property>
+		<property name="email" column="email"></property>
+		<property name="name" column="name"></property>
+		<property name="createdDate" column="created_date"></property>
+		<property name="updatedDate" column="updated_date"></property>
+	</class>
+</hibernate-mapping>

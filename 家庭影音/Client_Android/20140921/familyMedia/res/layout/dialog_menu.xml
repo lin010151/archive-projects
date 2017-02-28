@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    
+    android:orientation="vertical"
+  >
+
+<LinearLayout 
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true" >
+
+    <LinearLayout
+        android:id="@+id/menu_llAbout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/menu_bg_selector"
+        android:padding="8dp" >
+
+        <ImageView 
+            android:layout_width="50dp"
+    		android:layout_height="50dp"
+    		android:src="@drawable/icon"
+            />
+        <LinearLayout
+        	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:padding="5dp"
+    		android:gravity="left|center_horizontal"
+        	>
+
+        	<TextView
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:text="关于"
+        	    android:textColor="@color/white"
+        	    android:textSize="15dp" />
+
+        	<TextView
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:text="家庭影音"
+        	    android:textColor="@color/green"
+        	    android:textSize="15dp" />
+
+        </LinearLayout>
+     </LinearLayout>
+     
+		<TextView
+		          android:layout_width="fill_parent"
+	              android:layout_height="0.2dp"
+	              android:background="@color/black"
+		          />
+
+		 <LinearLayout
+		     android:id="@+id/menu_llScan"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="horizontal"
+		     android:padding="8dp"
+		     android:visibility="gone" >
+
+		          <ImageView
+		              android:layout_width="35dp"
+	              	  android:layout_height="35dp"
+	              	  android:src="@drawable/menu_scan"
+	              	  android:scaleType="fitCenter"
+		              />
+
+		          <TextView
+		              android:layout_width="wrap_content"
+		              android:layout_height="fill_parent"
+		              android:layout_marginLeft="10dp"
+		              android:gravity="center"
+		              android:text="扫一扫"
+		              android:textColor="@color/white"
+		              android:textSize="15dip" />
+
+		      </LinearLayout>
+		<TextView
+		          android:layout_width="fill_parent"
+	              android:layout_height="0.2dp"
+	              android:background="@color/black"
+		          />
+
+		 <LinearLayout
+		     android:id="@+id/menu_llShare"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="horizontal"
+		     android:padding="8dp"
+		     android:background="@drawable/menu_bg_selector"
+		     android:visibility="visible" >
+
+		          <ImageView
+		              android:layout_width="35dp"
+	              	  android:layout_height="35dp"
+	              	  android:src="@drawable/menu_share"
+	              	  android:scaleType="fitCenter"
+		              />
+
+		          <TextView
+		              android:layout_width="wrap_content"
+		              android:layout_height="fill_parent"
+		              android:layout_marginLeft="10dp"
+		              android:gravity="center"
+		              android:text="分享"
+		              android:textColor="@color/white"
+		              android:textSize="15dip" />
+
+		      </LinearLayout>
+		<TextView
+		          android:layout_width="fill_parent"
+	              android:layout_height="0.2dp"
+	              android:background="@color/black"
+		          />
+
+		 <LinearLayout
+		     android:id="@+id/menu_llSetting"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="horizontal"
+		     android:background="@drawable/menu_bg_selector"
+		     android:padding="8dp" >
+
+		          <ImageView
+		              android:layout_width="35dp"
+	              	  android:layout_height="35dp"
+	              	  android:src="@drawable/menu_setting"
+	              	  android:scaleType="fitCenter"
+		              />
+
+		          <TextView
+		              android:id="@+id/tv_menu_setting"
+		              android:layout_width="wrap_content"
+		              android:layout_height="fill_parent"
+		              android:layout_marginLeft="10dp"
+		              android:gravity="center"
+		              android:text="设置"
+		              android:textColor="@color/white"
+		              android:textSize="15dip" />
+
+		      </LinearLayout>
+		<TextView
+		          android:layout_width="fill_parent"
+	              android:layout_height="0.2dp"
+	              android:background="@color/black"
+		          />
+
+		 <LinearLayout
+		     android:id="@+id/menu_llExit"
+		     android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:orientation="horizontal"
+		     android:background="@drawable/menu_bg_selector"
+		     android:padding="8dp" >
+
+		          <ImageView
+		              android:layout_width="35dp"
+	              	  android:layout_height="35dp"
+	              	  android:src="@drawable/menu_exit"
+	              	  android:scaleType="fitCenter"
+		              />
+		          <TextView
+		              android:layout_width="wrap_content"
+	              	  android:layout_height="fill_parent"
+	              	  android:layout_marginLeft="10dp"
+	              	  android:text="退出登录"
+	              	  android:id="@+id/asafdfdsdd"
+	              	  android:textSize="15dip"
+	              	  android:background="@null"
+	              	  android:gravity="center"
+	              	  android:textColor="@color/white"
+		              />
+		      </LinearLayout>
+		      
+		 <TextView
+		          android:layout_width="fill_parent"
+	              android:layout_height="0.2dp"
+	              android:background="@color/black"
+		          />
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">家庭影音</string>
+	<string name="action_settings">设置</string>
+	<string name="tag">tag_fm</string>
+	
+	<string name="network_error">网络异常，请检查网络</string>
+</resources>

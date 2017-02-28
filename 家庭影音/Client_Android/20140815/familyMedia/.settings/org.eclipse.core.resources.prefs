@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//gen/android/support/v7/appcompat/R.java=UTF-8
+encoding//src/com/fm/activity/AboutActivity.java=UTF-8
+encoding//src/com/fm/activity/ConnectActivity.java=UTF-8
+encoding//src/com/fm/activity/FileActivity.java=UTF-8
+encoding//src/com/fm/activity/GuideActivity.java=UTF-8
+encoding//src/com/fm/activity/MusicActivity.java=UTF-8
+encoding//src/com/fm/activity/WelcomeActivity.java=UTF-8
+encoding//src/com/fm/other/Client.java=UTF-8
+encoding//src/com/fm/other/DownloadFile.java=UTF-8
+encoding//src/com/fm/other/NetFile.java=UTF-8
+encoding//src/com/fm/other/SDCardFile.java=UTF-8
+encoding//src/com/fm/other/ThreadPool.java=UTF-8
+encoding/<project>=UTF-8

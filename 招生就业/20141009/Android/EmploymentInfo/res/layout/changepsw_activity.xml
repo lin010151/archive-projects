@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/changepswtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="修改密码"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/oldpswtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 原密码： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/oldpswed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入旧密码" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/newpswtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 新密码： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp"  />
+        <EditText
+            android:id="@+id/newpswed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入新密码" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/confirmtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 确    认："
+			android:textColor="@android:color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/confirmed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请再次输入新密码以确认" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 问题： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/changequestion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入提示密码的问题" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 答案： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/changeanswer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入提示密码的答案" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/changepswbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/changepswexitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="退出" />
+
+    </LinearLayout>
+
+</LinearLayout>

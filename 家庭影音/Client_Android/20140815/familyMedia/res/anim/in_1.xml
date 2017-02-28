@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<!-- 与out_2搭配使用，比较好看 -->
+ 
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator"> 
+    
+    <!-- 位置从右上角进入屏幕 -->
+    <translate
+        android:fromXDelta="100%p"
+        android:toXDelta="0"
+        android:fromYDelta="100%p"
+        android:toYDelta="0"
+        android:duration="1000"
+    />
+    <!-- 同时从最小到最大 -->
+    <scale
+        android:fromXScale="0.0"
+        android:toXScale="1.0"
+        android:fromYScale="0.0"
+        android:toYScale="1.0"
+        android:pivotX="0%"
+        android:pivotY="0%"
+        android:duration="1000"
+    />
+</set>

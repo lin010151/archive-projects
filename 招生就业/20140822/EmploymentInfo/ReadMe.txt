@@ -1,0 +1,6 @@
+Inform指事务通知
+Recruitment指招聘信息
+Internship指就业实习
+organises指招聘专场
+
+url需要在/EmploymentInfo/res/values/strings修改。

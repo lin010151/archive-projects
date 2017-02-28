@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.gdei.jobmessage.model">
+	<class name="Student" table="student">
+		<id name="stuID" column="stuID"></id>
+		<property name="stuName" column="stuName"></property>
+		<property name="stuIDCard" column="stuIDCard"></property>
+		<property name="stuSex" column="stuSex"></property>
+		<many-to-one name="major" column="majorID" lazy="false"
+			class="edu.gdei.jobmessage.model.Major" unique="true"></many-to-one>
+		<many-to-one name="address" column="addressID" lazy="false"
+			class="edu.gdei.jobmessage.model.Address" unique="true"></many-to-one>
+		<property name="stuPolitical" column="stuPolitical"></property>
+		<property name="stuEmail" column="stuEmail"></property>
+		<one-to-one name="login"></one-to-one>
+	</class>
+</hibernate-mapping>

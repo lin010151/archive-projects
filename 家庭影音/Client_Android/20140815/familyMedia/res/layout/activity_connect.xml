@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="22px" >
+
+            <EditText
+                android:id="@+id/txtIp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="22px"
+                android:layout_toRightOf="@+id/zhanghao"
+                android:background="@drawable/login_et"
+                android:ems="10"
+                android:hint="请输入IP地址" />
+
+            <requestFocus />
+
+            <TextView
+                android:id="@+id/zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtIp"
+                android:layout_alignBottom="@+id/txtIp"
+                android:text="IP地址"
+                android:textColor="#056aaf"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginRight="22px"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/txtPort"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="22px"
+                android:layout_toRightOf="@+id/mima"
+                android:background="@drawable/login_et"
+                android:ems="10"
+                android:hint="请输入端口号"
+                android:text="1234" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/mima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtPort"
+                android:layout_alignBottom="@+id/txtPort"
+                android:layout_marginLeft="22px"
+                android:text="端口号"
+                android:textColor="#056aaf"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@+id/login_checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="22px"
+        android:background="@drawable/login_btn"
+        android:text="连接"
+        android:textColor="#056aaf"
+        android:textSize="24sp" />
+ 
+    <CheckBox
+        android:id="@+id/login_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnConnect"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_margin="22px"
+        android:layout_marginTop="14dp"
+        android:text="记住IP"
+        android:textColor="#056aaf"
+        android:textSize="18sp" />
+
+</RelativeLayout>

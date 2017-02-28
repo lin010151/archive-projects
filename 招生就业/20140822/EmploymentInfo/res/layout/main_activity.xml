@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:scaleType="matrix"
+            android:src="@drawable/a" />
+
+        <edu.department.employment.infosys.jazzyviewpager.JazzyViewPager
+            android:id="@+id/viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </edu.department.employment.infosys.jazzyviewpager.JazzyViewPager>
+    </RelativeLayout>
+
+</LinearLayout>

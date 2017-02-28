@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.gdei.jobmessage.model">
+	<class name="Company" table="company">
+		<id name="companyID" column="companyID"></id>
+		<property name="companyName" column="companyName"></property>
+		<property name="companyIntro" column="companyIntro"></property>
+		<property name="contact" column="contact"></property>
+		<property name="telephone" column="telephone"></property>
+		<property name="weburl" column="weburl"></property>
+		<property name="type" column="type"></property>
+		<property name="companyAddress" column="companyAddress"></property>
+		<property name="companyEmail" column="companyEmail"></property>
+		<property name="postalcode" column="postalcode"></property>
+		<property name="fax" column="fax"></property>
+		<property name="note" column="note"></property>
+	</class>
+</hibernate-mapping>

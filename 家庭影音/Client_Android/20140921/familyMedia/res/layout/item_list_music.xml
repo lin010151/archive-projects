@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!-- 歌曲列表的item -->
+ 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" android:layout_height="wrap_content"> 
+
+    <ImageView
+        android:id="@+id/music_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:layout_margin="4dp"
+        android:padding="2dip"
+        android:src="@drawable/music" />
+        
+    <TextView
+        android:id="@+id/music_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/music_title"
+        android:layout_toRightOf="@+id/music_image"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="音乐内容"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/music_text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="音乐标题"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+ 
+</RelativeLayout> 

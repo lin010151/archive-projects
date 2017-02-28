@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.gdei.jobmessage.model">
+	<class name="Manager" table="manager">
+		<id name="managerID" column="managerID" />
+		<property name="managerName" column="managerName"></property>
+		<property name="managerIDCard" column="managerIDCard"></property>
+		<property name="managerSex" column="managerSex"></property>
+		<property name="managerPhone" column="managerPhone"></property>
+		<property name="managerEmail" column="managerEmail"></property>
+	</class>
+</hibernate-mapping>

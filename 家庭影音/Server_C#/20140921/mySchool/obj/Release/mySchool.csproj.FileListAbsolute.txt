@@ -1,0 +1,9 @@
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\bin\Release\mySchool.exe.config
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\Interop.WMPLib.dll
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\AxInterop.WMPLib.dll
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\mySchool.csproj.ResolveComReference.cache
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\mySchool.csprojResolveAssemblyReference.cache
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\mySchool.MainForm.resources
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\mySchool.form.AboutForm.resources
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\mySchool.Properties.Resources.resources
+C:\Users\Ray\Documents\Visual Studio 2013\Projects\server\mySchool\obj\Release\mySchool.csproj.GenerateResource.Cache

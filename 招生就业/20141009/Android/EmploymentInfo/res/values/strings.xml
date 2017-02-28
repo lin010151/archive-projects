@@ -1,0 +1,69 @@
+<resources>
+
+    <string name="app_name">广二师就业信息</string>
+
+    <!-- 欢迎 -->
+    <string name="welcome_desc">logo</string>
+    <string name="welcome_appTitle">招生就业处信息推送系统</string>
+    <string name="companion">招生就业处\n计算机科学系\n工科专业工程实践教育中心\nCDIO工程教育(软件工程开发)实验室\n联合监制</string>
+
+    <!-- 头部 -->
+    <string name="news_top_right_loginbtn">登录</string>
+    <string name="news_top_right_settingbtn">设置</string>
+    <string name="title_inform">事务通知</string>
+    <string name="title_recruitment">招聘信息</string>
+    <string name="title_practive">就业实习信息</string>
+    <string name="title_session">招聘专场信息</string>
+    <string name="title_news_category_inform">通知</string>
+    <string name="title_news_category_recruitment">招聘</string>
+    <string name="title_news_category_practive">实习</string>
+    <string name="title_news_category_session">专场</string>
+
+    <!-- jazzy 效果 -->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <!-- 刷新 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载……</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_none">已经到最后了</string><!-- 暂未使用 -->
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!-- 网址 -->
+    <string name="website_url">http://210.38.64.161:7000</string><!-- 地址头 -->
+    <string name="web_url">http://192.168.1.9:8080/MessageSystem</string><!-- 新地址头 -->
+    <string name="inform_url">http://210.38.64.161:7000/job/xwtz/?_page_=</string><!-- 事务通知 -->
+    <string name="inRecruitment_url">http://210.38.64.161:7000/job/zpxx/?_page_=</string><!-- 校内招聘信息（招生就业处有消息后修改） -->
+    <string name="outRecruitment_url">http://210.38.64.161:7000/job/zpxx/?_page_=</string><!-- 校外招聘信息（招生就业处有消息后修改） -->
+    <string name="internship_url">http://210.38.64.161:7000/job/jysx/?_page_=</string><!-- 就业实习 -->
+    <string name="inOrganises_url">http://210.38.64.161:7000/job/zpzc/xnzpzc/?_page_=</string><!-- 校内招聘专场（可能有误） -->
+    <string name="outOrganises_url">http://210.38.64.161:7000/job/zpzc/xwzpzc/?_page_=</string><!-- 校外招聘专场（可能有误） -->
+    
+    <!-- 详细信息 -->
+    <string name="details">详细信息</string>
+
+	<!-- 关于 -->
+	<string name="aboutTitle">关于</string>
+	<string name="about_desc">logo</string>
+	<string name="about_appTitle">\n招生就业处信息推送系统</string>
+	<string name="version">版本　v0.9</string>
+	<string name="producers">\n制作\n广东二师H13软件工程班\n软件开发兴趣小组</string>
+	<string name="coaches">\n指导老师\n朱雄泳　周如旗\n阮锦新　毕伟宏</string>
+	<string name="programmers">\n开发\n陈建航　陈文辉　张敏怡\n卢坤菲　谢佳佳　肖鸣悦\n刘珊珊 　林旭源　林　威\n曹家荣　李始一 　潘凯宏 　伍凯涛\n</string>
+	
+</resources>

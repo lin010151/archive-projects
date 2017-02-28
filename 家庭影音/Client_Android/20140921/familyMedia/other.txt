@@ -1,0 +1,49 @@
+private long exitTime = 0;
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) 
+    {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN)
+        {   
+            if ((System.currentTimeMillis() - exitTime) > 2000)
+            {  
+                Toast.makeText(ConnectActivity.this, "再按一次退出程序", Toast.LENGTH_SHORT).show();                                
+                exitTime = System.currentTimeMillis();   
+            } 
+            else 
+            {
+                finish();
+                System.exit(0);		//改
+            }
+            return true;   
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+    
+    
+    
+    
+ 
+ 
+ UDP+NAT
+
+我的做法:
+1.登陆 我采用的是TCP连接(一开始我也是UDP登陆的,后来经常丢包,有的客户端登不上去)
+2.聊天的时候,判断对方和自己是否存在同个LAN,
+  如果是的话,那就用局限网的SOCKET模式聊天
+  如果不是的话,那就先UDP穿透
+注意:服务器端肯定是公网IP,客户端就无所谓了
+
+
+然后一次读写就完成了，这时候双方任何一个都可以发起close操作，不过一般都是client先发起close操作。为什么呢，一般的server不会回复完client后立即关闭连接的，当然不排除有特殊的情况
+
+关闭一些长时间没有读写事件发生的连接
+
+在连接保持期间，如果没有数据包发送，需要双方发链路检测包。
+如果在指定时间段内未收到对方响应，则判断对方已经离线。用于检测TCP的异常断开。基本原因是服务器端不能有效的判断客户端是否在线，也就是说，服务器无法区分客户端是长时间在空闲，还是已经掉线的情况
+
+所谓的心跳包就是客户端定时发送简单的信息给服务器端告诉它我还在而已。
+每隔几分钟发送一个固定信息给服务端，服务端几分钟内没有收到客户端信息则视客户端断开。
+
+启动一个低级别的线程
+ 

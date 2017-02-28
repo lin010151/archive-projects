@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:background="@drawable/lsj3"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="播放器" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/black" >
+
+        <ImageButton
+            android:id="@+id/btnMode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/play_loop" />
+
+        <Button
+            android:id="@+id/btnLast"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_rew" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_play" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:background="@drawable/btn_ff"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/music_list" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvTimeElapsed"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/pbDuration"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dip"
+            android:layout_height="10dip"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="6"
+            android:maxHeight="1dip"
+            android:minHeight="1dip"
+            android:progressDrawable="@drawable/progress_style"
+            android:secondaryProgress="0"
+            android:thumb="@drawable/seekbar_thumb"
+            android:thumbOffset="0dip" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:text="00:00" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgDisk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="39dp" />
+
+</RelativeLayout>

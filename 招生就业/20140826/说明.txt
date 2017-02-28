@@ -1,0 +1,3 @@
+需关联appcompat v7
+
+请先阅读工程里的ReadMe.txt

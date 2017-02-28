@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcomerootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ImageView_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:contentDescription="@string/welcome_desc"
+            android:src="@drawable/gdei_logo" />
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageView_welcome"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/welcome_appTitle"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+        
+        <TextView
+            android:id="@+id/companion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:text="@string/companion"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+</RelativeLayout>

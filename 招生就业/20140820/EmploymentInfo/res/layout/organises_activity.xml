@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical" >
+
+    <edu.department.employment.infosys.XListview.XListView
+        android:id="@+id/inorganiseslistView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000" >
+    </edu.department.employment.infosys.XListview.XListView>
+    <edu.department.employment.infosys.XListview.XListView
+        android:id="@+id/outorganiseslistView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000" >
+    </edu.department.employment.infosys.XListview.XListView>
+
+</LinearLayout>

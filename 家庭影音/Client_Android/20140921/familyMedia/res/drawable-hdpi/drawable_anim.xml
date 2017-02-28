@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 光碟的逐帧动画 -->
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/dy1" android:duration="200" />
+    <item android:drawable="@drawable/dy2" android:duration="200" />
+    <item android:drawable="@drawable/dy3" android:duration="200" />
+    <item android:drawable="@drawable/dy4" android:duration="200" />
+</animation-list>

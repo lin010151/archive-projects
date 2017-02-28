@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 与spring集成的写法，action等交予spring管理 -->
+	<package name="Actions" namespace="/" extends="action_struts">
+		
+		<action name="address" class="addressAction">
+			<result name="success">/addressinfo.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		
+		<action name="company" class="companyAction">
+			<result name="success">/companyinfo.jsp</result>
+			<result name="update">/updatecompany.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		
+		<action name="major" class="majorAction">
+			<result name="success">/majorinfo.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		
+		<action name="manager" class="managerAction">
+			<result name="success">/main.jsp</result>
+			<result name="login">/logininfo.jsp</result>
+			<result name="index">/index.jsp</result>
+			<result name="managers">/managerinfo.jsp</result>
+			<result name="updatemanager">/updatemanager.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		
+		<action name="notification" class="notificationAction">
+			<result name="success">/notification.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		
+		<action name="post" class="postAction">
+			<result name="success">/postinfo.jsp</result>
+			<result name="update">/updatepost.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		
+		<action name="session" class="sessionAction">
+			<result name="success">/sessioninfo.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		
+		<action name="student" class="studentAction">
+			<result name="success">/studentinfo.jsp</result>
+			<result name="update">/updatestudent.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+
+		<action name="user" class="userAction">
+			<result name="success">/clientinfo.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+
+	</package>
+</struts>

@@ -1,0 +1,26 @@
+f:\users\cjh1\documents\visual studio 2013\Projects\mySchool\mySchool\bin\Debug\mySchool.exe.config
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\bin\Debug\mySchool.exe.config
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\bin\Debug\mySchool.exe
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\bin\Debug\mySchool.pdb
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\obj\Debug\mySchool.csprojResolveAssemblyReference.cache
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\obj\Debug\mySchool.Form1.resources
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\obj\Debug\mySchool.Properties.Resources.resources
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\obj\Debug\mySchool.csproj.GenerateResource.Cache
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\obj\Debug\mySchool.exe
+F:\Users\cjh1\Desktop\mySchool-服务端\mySchool\obj\Debug\mySchool.pdb
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\bin\Debug\mySchool.exe.config
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.exe
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.pdb
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\bin\Debug\mySchool.exe
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\bin\Debug\mySchool.pdb
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.csprojResolveAssemblyReference.cache
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.Properties.Resources.resources
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.csproj.GenerateResource.Cache
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.MainForm.resources
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.form.AboutForm.resources
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\bin\Debug\Interop.WMPLib.dll
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\bin\Debug\AxInterop.WMPLib.dll
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\Interop.WMPLib.dll
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\AxInterop.WMPLib.dll
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.csproj.ResolveComReference.cache
+F:\Users\cjh1\Desktop\家庭影音-服务端\mySchool\obj\Debug\mySchool.form.Form1.resources

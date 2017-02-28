@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.department.employment.infosys"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <!-- 添加连接网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 添加获取网络信息的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- 添加广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <!-- 添加开机启动权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitle" >
+        
+        <!-- 注册Activity -->
+        <activity
+            android:name=".gui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:screenOrientation="portrait"
+            android:name=".gui.MainFrameActivity">            
+        </activity>
+        <activity 
+            android:screenOrientation="portrait" 
+            android:name=".gui.InformActivity">
+        </activity>
+        <activity 
+            android:screenOrientation="portrait" 
+            android:name=".gui.InternshipActivity">
+        </activity>
+        <activity 
+            android:screenOrientation="portrait" 
+            android:name=".gui.RecruitmentActivity">
+        </activity>
+        <activity 
+            android:screenOrientation="portrait" 
+            android:name=".gui.OrganisesActivity">
+        </activity>
+        <activity 
+            android:screenOrientation="portrait" 
+            android:name=".gui.LoginActivity">
+        </activity>
+        <activity 
+            android:screenOrientation="portrait" 
+            android:name=".gui.AboutActivity">
+        </activity>        
+        <activity 
+            android:screenOrientation="portrait" 
+            android:name=".gui.DetailNoticeActivity">
+        </activity>
+    </application>
+
+</manifest>

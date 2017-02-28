@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/com/fm/activity/ConnectActivity.java=UTF-8
+encoding//src/com/fm/activity/FileActivity.java=UTF-8
+encoding//src/com/fm/activity/MusicActivity.java=UTF-8
+encoding//src/com/fm/activity/WelcomeActivity.java=UTF-8
+encoding//src/com/fm/util/Client.java=UTF-8
+encoding//src/com/fm/util/DownloadFile.java=UTF-8
+encoding//src/com/fm/util/NetFile.java=UTF-8
+encoding//src/com/fm/util/SDCardFile.java=UTF-8
+encoding//src/com/fm/util/ThreadPool.java=UTF-8
+encoding/<project>=UTF-8

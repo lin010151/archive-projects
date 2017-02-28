@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/customviewlayTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A94F9" >
+
+        <TextView
+            android:id="@+id/customviewtvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="关于我们"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/customviewtvimgCancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/about_canceltor" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/customviewlayTitle" >
+
+        <ImageView
+            android:id="@+id/qtcode_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/icon" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" >
+
+            <TextView
+                android:id="@+id/orthertv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:text="家庭影音 v_1.0"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orthertv2"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:text="制作：" />
+
+                <TextView
+                    android:id="@+id/orthertv0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    
+                    android:text="广东第二师范学院 13级软件工程 学习兴趣小组"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

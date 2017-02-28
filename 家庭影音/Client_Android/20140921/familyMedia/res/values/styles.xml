@@ -1,0 +1,29 @@
+<resources>
+    
+   	<style name="edittext">
+   	    <item name="android:background">@drawable/edittext1</item>
+   	    <item name="android:padding">8dp</item>
+   	</style>
+   	
+	<style name="title">
+   	    <item name="android:background">@drawable/title_bar</item>
+   	    <item name="android:layout_height">60dp</item>
+   	    <item name="android:layout_alignParentTop">true</item>
+   	    <item name="android:layout_width">match_parent</item>
+   	</style>
+    
+ 
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    </style>
+
+  
+    <style name="AppTheme" parent="AppBaseTheme">
+       <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 弹出窗体的动画 -->
+    <style name="mystyle" parent="android:Animation">  
+        <item name="@android:windowEnterAnimation">@anim/head_in</item>  //进入时的动画   
+        <item name="@android:windowExitAnimation">@anim/head_out</item>    //退出时的动画   
+    </style>  
+</resources>

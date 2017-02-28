@@ -1,0 +1,34 @@
+﻿
+ string st = string.Format("DELETE FROM [std] WHERE id = '{0}'", id);
+
+ string st = string.Format("DELETE FROM [std] WHERE name = '{0}'", name);
+
+ string st = string.Format("Update [std] SET name = '{0}', SET born = '{1}'", name, born);
+
+
+
+
+
+     
+string st = string.Format("SELECT * FROM [user] WHERE account = '{0}' AND password = '{1}'", account, password);
+                OleDbCommand cmd = new OleDbCommand(st, conn);
+                OleDbDataReader reader = cmd.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }   
+              
+          
+  string MyConnString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source="+Server.MapPath(".")+"F:\\student.mdb;" ; 
+这里错了
+应该这样写
+string MyConnString = "Provider = Microsoft.jet.OLEDB.4.0; Data Source =" + Server.MapPath("相对路径");
+Server.MapPath这个里面应该是写相对路径，他会返回服务器上的绝对路径
+
+
+string strnow = DateTime.Now.ToString("yyyyMMdd-hh-mm-ss");               

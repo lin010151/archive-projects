@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"  >
+    
+    <TextView
+        android:id="@+id/userinfotitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="个人详细信息"
+        android:textSize="30sp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     学号： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/idinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     姓名： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/nameinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     性别： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/sexinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 身份证： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/idcardinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="政治面貌："
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/polityinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      专业： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/majorinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 生源地： "
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:id="@+id/addrinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" " />
+        
+    </LinearLayout>    
+
+</LinearLayout>

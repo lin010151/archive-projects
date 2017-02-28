@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="edu.gdei.jobmessage.model">
+	<class name="Post" table="post">
+		<id name="postID" column="postID"></id>
+		<property name="postName" column="postName"></property>
+		<property name="education" column="education"></property>
+		<property name="recruitNum" column="recruitNum"></property>
+		<property name="releaseTime" column="releaseTime"></property>
+		<property name="jobsCategory" column="jobsCategory"></property>
+		<property name="jobsAddress" column="jobsAddress"></property>
+		<property name="postRequirements" column="postRequirements"></property>
+		<many-to-one name="company" column="companyID" lazy="false"
+			class="edu.gdei.jobmessage.model.Company"></many-to-one>
+		<property name="salary" column="salary"></property>
+		<property name="major" column="major"></property>
+		<property name="relatefile" column="relatefile"></property>
+		<property name="note" column="note"></property>
+	</class>
+</hibernate-mapping>

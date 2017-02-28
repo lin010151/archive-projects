@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd">
+
+	<!-- Spring管理Struts2的Action -->
+	<bean name="addressAction" class="edu.gdei.jobmessage.action.AddressAction" scope="prototype"></bean>
+	<bean name="companyAction" class="edu.gdei.jobmessage.action.CompanyAction" scope="prototype"></bean>
+	<bean name="majorAction" class="edu.gdei.jobmessage.action.MajorAction" scope="prototype"></bean>
+	<bean name="managerAction" class="edu.gdei.jobmessage.action.ManagerAction" scope="prototype"></bean>
+	<bean name="notificationAction" class="edu.gdei.jobmessage.action.NotificationAction" scope="prototype"></bean>
+	<bean name="postAction" class="edu.gdei.jobmessage.action.PostAction" scope="prototype"></bean>
+	<bean name="sessionAction" class="edu.gdei.jobmessage.action.SessionAction" scope="prototype"></bean>
+	<bean name="studentAction" class="edu.gdei.jobmessage.action.StudentAction" scope="prototype"></bean>
+	<bean name="userAction" class="edu.gdei.jobmessage.action.UserAction" scope="prototype"></bean>
+	
+	<bean name="addressJson" class="edu.gdei.jobmessage.json.AddressJson" scope="prototype"></bean>
+	<bean name="companyJson" class="edu.gdei.jobmessage.json.CompanyJson" scope="prototype"></bean>
+	<bean name="majorJson" class="edu.gdei.jobmessage.json.MajorJson" scope="prototype"></bean>
+	<bean name="postJson" class="edu.gdei.jobmessage.json.PostJson" scope="prototype"></bean>
+	<bean name="studentJson" class="edu.gdei.jobmessage.json.StudentJson" scope="prototype"></bean>
+
+	<!-- Spring管理Struts2的Interceptor -->
+	<bean name="checkLoginInterceptor" class="edu.gdei.jobmessage.util.CheckLogin" scope="prototype"></bean>
+	
+	<bean name="addressDao" class="edu.gdei.jobmessage.dao.impl.AddressDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="addressService" class="edu.gdei.jobmessage.service.impl.AddressService">
+		<property name="addressDao" ref="addressDao"></property>
+	</bean>
+	
+	<bean name="clickcountDao" class="edu.gdei.jobmessage.dao.impl.ClickCountDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="clickcountService" class="edu.gdei.jobmessage.service.impl.ClickCountService">
+		<property name="clickcountDao" ref="clickcountDao"></property>
+	</bean>
+	
+	<bean name="companyDao" class="edu.gdei.jobmessage.dao.impl.CompanyDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="companyService" class="edu.gdei.jobmessage.service.impl.CompanyService">
+		<property name="companyDao" ref="companyDao"></property>
+	</bean>
+	
+	<bean name="loginDao" class="edu.gdei.jobmessage.dao.impl.LoginDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="loginService" class="edu.gdei.jobmessage.service.impl.LoginService">
+		<property name="loginDao" ref="loginDao"></property>
+	</bean>
+	
+	<bean name="majorDao" class="edu.gdei.jobmessage.dao.impl.MajorDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="majorService" class="edu.gdei.jobmessage.service.impl.MajorService">
+		<property name="majorDao" ref="majorDao"></property>
+	</bean>
+	
+	<bean name="managerDao" class="edu.gdei.jobmessage.dao.impl.ManagerDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="managerService" class="edu.gdei.jobmessage.service.impl.ManagerService">
+		<property name="managerDao" ref="managerDao"></property>
+	</bean>
+	
+	<bean name="postDao" class="edu.gdei.jobmessage.dao.impl.PostDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="postService" class="edu.gdei.jobmessage.service.impl.PostService">
+		<property name="postDao" ref="postDao"></property>
+	</bean>
+	
+	<bean name="pushmessageDao" class="edu.gdei.jobmessage.dao.impl.PushMessageDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="pushmessageService" class="edu.gdei.jobmessage.service.impl.PushMessageService">
+		<property name="pushmessageDao" ref="pushmessageDao"></property>
+	</bean>
+	
+	<bean name="recruitDao" class="edu.gdei.jobmessage.dao.impl.RecruitViewDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="recruitviewService" class="edu.gdei.jobmessage.service.impl.RecruitViewService">
+		<property name="recruitDao" ref="recruitDao"></property>
+	</bean>
+	
+	<bean name="studentDao" class="edu.gdei.jobmessage.dao.impl.StudentDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="studentService" class="edu.gdei.jobmessage.service.impl.StudentService">
+		<property name="studentDao" ref="studentDao"></property>
+	</bean>
+	
+	<bean name="userDao" class="edu.gdei.jobmessage.dao.impl.UserDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="userService" class="edu.gdei.jobmessage.service.impl.UserService">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+	
+	<bean name="visitDao" class="edu.gdei.jobmessage.dao.impl.VisitDao">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean name="visitService" class="edu.gdei.jobmessage.service.impl.VisitService">
+		<property name="visitDao" ref="visitDao"></property>
+	</bean>
+	
+</beans>

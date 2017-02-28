@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/connect_background"
+    android:gravity="center"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="22px" >
+
+            <!--  -->
+
+            <EditText
+                android:id="@+id/connect_txtIp"
+                style="@style/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="22px"
+                android:layout_toRightOf="@+id/zhanghao"
+                android:digits="0123456789."
+                android:hint="请输入IP地址"
+                android:singleLine="true" />
+
+            <requestFocus />
+
+            <TextView
+                android:id="@+id/zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/connect_txtIp"
+                android:layout_alignBottom="@+id/connect_txtIp"
+                android:text="IP地址"
+                android:textColor="#056aaf"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout1"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginRight="22px"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/connect_txtPort"
+                style="@style/edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="22px"
+                android:layout_toRightOf="@+id/mima"
+                android:hint="请输入端口号"
+                android:inputType="number"
+                android:singleLine="true" >
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/mima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/connect_txtPort"
+                android:layout_alignBottom="@+id/connect_txtPort"
+                android:layout_marginLeft="22px"
+                android:text="端口号"
+                android:textColor="#056aaf"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/connect_btnConnect"
+        android:layout_width="160dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/connect_checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="22px"
+        android:background="@drawable/login_btn_selector"
+        android:text="连接"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/connect_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/connect_checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:indeterminateDrawable="@anim/progress"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/connect_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_margin="22px"
+        android:layout_marginTop="16dp"
+        android:text="记住IP和端口号"
+        android:textColor="#056aaf"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/connect_btnScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/relativeLayout3"
+        android:layout_below="@+id/connect_btnConnect"
+        android:background="@drawable/camera_selector" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout3"
+        android:layout_below="@+id/connect_checkbox" >
+    </LinearLayout>
+
+</RelativeLayout>
